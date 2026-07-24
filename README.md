@@ -84,7 +84,7 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/ml-04-regression
+git clone https://github.com/kwameape123/ml-04-regression
 
 cd ml-04-regression
 code .
