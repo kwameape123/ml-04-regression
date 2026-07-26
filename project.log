@@ -851,3 +851,240 @@ Index: []
 2026-07-26 15:13:06 | INFO | M04 | Feature:  TV,Radio,Newspaper  ->  Target: Sales  (regression)
 2026-07-26 15:13:06 | INFO | M04 | Line:     Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
 2026-07-26 15:13:06 | INFO | M04 | ========================
+2026-07-26 15:20:29 | INFO | M04 | === RUN START ===
+2026-07-26 15:20:29 | INFO | M04 | project=M04
+2026-07-26 15:20:29 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 15:20:29 | INFO | M04 | python=3.14.6
+2026-07-26 15:20:29 | INFO | M04 | os=Windows 11
+2026-07-26 15:20:29 | INFO | M04 | shell=powershell
+2026-07-26 15:20:29 | INFO | M04 | cwd=notebooks
+2026-07-26 15:20:29 | INFO | M04 | github_actions=False
+2026-07-26 15:20:29 | INFO | M04 | Confirming installation:
+2026-07-26 15:20:29 | INFO | M04 |   python:       3.14.6
+2026-07-26 15:20:29 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 15:20:29 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 15:20:29 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 15:20:29 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 15:20:29 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 15:20:29 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 15:20:29 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 15:20:29 | INFO | M04 | Missing values:
+TV           0
+Radio        0
+Newspaper    0
+Sales        0
+dtype: int64
+2026-07-26 15:20:29 | INFO | M04 | Basic statistics:
+               TV       Radio   Newspaper       Sales
+count  200.000000  200.000000  200.000000  200.000000
+mean   147.042500   23.264000   30.554000   15.130500
+std     85.854236   14.846809   21.778621    5.283892
+min      0.700000    0.000000    0.300000    1.600000
+25%     74.375000    9.975000   12.750000   11.000000
+50%    149.750000   22.900000   25.750000   16.000000
+75%    218.825000   36.525000   45.100000   19.050000
+max    296.400000   49.600000  114.000000   27.000000
+2026-07-26 15:20:29 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 15:20:29 | INFO | M04 | 0 outliers found for TV:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:20:29 | INFO | M04 | 0 outliers found for Radio:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:20:29 | INFO | M04 | 2 outliers found for Newspaper:
+        TV  Radio  Newspaper  Sales
+16    67.8   36.6      114.0   12.5
+101  296.4   36.3      100.9   23.8
+2026-07-26 15:20:29 | INFO | M04 | Original rows: 200  Model rows: 198
+2026-07-26 15:20:29 | INFO | M04 | Train instances: 158
+2026-07-26 15:20:29 | INFO | M04 | Test instances: 40
+2026-07-26 15:20:29 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 15:20:29 | INFO | M04 | Fitted line: Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
+2026-07-26 15:20:29 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 15:20:29 | INFO | M04 |   R-squared: 0.9130
+2026-07-26 15:20:29 | INFO | M04 |   RMSE:      1.55426  (in units of Sales)
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:20:30 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:20:30 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:20:30 | INFO | M04 | ========================
+2026-07-26 15:20:30 | INFO | M04 | SUMMARY
+2026-07-26 15:20:30 | INFO | M04 | ========================
+2026-07-26 15:20:30 | INFO | M04 | Dataset:  advertising.csv
+2026-07-26 15:20:30 | INFO | M04 | Feature:  TV,Radio,Newspaper  ->  Target: Sales  (regression)
+2026-07-26 15:20:30 | INFO | M04 | Line:     Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
+2026-07-26 15:20:30 | INFO | M04 | ========================
+2026-07-26 15:32:59 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 15:32:59 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 15:32:59 | INFO | M04 | Duplicate values in the original dataset:
+0
+2026-07-26 15:32:59 | INFO | M04 | Missing values:
+TV           0
+Radio        0
+Newspaper    0
+Sales        0
+dtype: int64
+2026-07-26 15:32:59 | INFO | M04 | Basic statistics:
+               TV       Radio   Newspaper       Sales
+count  200.000000  200.000000  200.000000  200.000000
+mean   147.042500   23.264000   30.554000   15.130500
+std     85.854236   14.846809   21.778621    5.283892
+min      0.700000    0.000000    0.300000    1.600000
+25%     74.375000    9.975000   12.750000   11.000000
+50%    149.750000   22.900000   25.750000   16.000000
+75%    218.825000   36.525000   45.100000   19.050000
+max    296.400000   49.600000  114.000000   27.000000
+2026-07-26 15:32:59 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 15:32:59 | INFO | M04 | 0 outliers found for TV:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:32:59 | INFO | M04 | 0 outliers found for Radio:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:32:59 | INFO | M04 | 2 outliers found for Newspaper:
+        TV  Radio  Newspaper  Sales
+16    67.8   36.6      114.0   12.5
+101  296.4   36.3      100.9   23.8
+2026-07-26 15:32:59 | INFO | M04 | Original rows: 200  Model rows: 198
+2026-07-26 15:34:20 | INFO | M04 | Train instances: 158
+2026-07-26 15:34:20 | INFO | M04 | Test instances: 40
+2026-07-26 15:35:08 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 15:35:08 | INFO | M04 |   R-squared: 0.9130
+2026-07-26 15:35:08 | INFO | M04 |   RMSE:      1.55426  (in units of Sales)
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:38:02 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:38:02 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 1  RMSE difference=0.085221
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443  RMSE difference=0.085221
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 2  RMSE difference=0.0444302
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902  RMSE difference=0.0444302
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 3  RMSE difference=0.0409221
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935  RMSE difference=0.0409221
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 4  RMSE difference=0.0334655
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212  RMSE difference=0.0334655
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 5  RMSE difference=0.065511
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116  RMSE difference=0.065511
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 6  RMSE difference=0.0647318
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111  RMSE difference=0.0647318
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 7  RMSE difference=0.0649421
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909  RMSE difference=0.0649421
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 8  RMSE difference=0.000396907
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799  RMSE difference=0.000396907
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 9  RMSE difference=0.000387027
+2026-07-26 15:39:25 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299  RMSE difference=0.000387027
+2026-07-26 15:39:25 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:39:25 | DEBUG | M04 |   degree=10  RMSE difference=0.00780148
+2026-07-26 15:39:25 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001  RMSE difference=0.00780148
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 1  RMSE difference=0.085221
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 2  RMSE difference=0.0444302
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 3  RMSE difference=0.0409221
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 4  RMSE difference=0.0334655
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 5  RMSE difference=0.065511
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 6  RMSE difference=0.0647318
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 7  RMSE difference=0.0649421
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 8  RMSE difference=0.000396907
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:40:56 | DEBUG | M04 |   degree= 9  RMSE difference=0.000387027
+2026-07-26 15:40:56 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:40:56 | DEBUG | M04 |   degree=10  RMSE difference=0.00780148
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 1  RMSE difference=0.085221
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 2  RMSE difference=0.0444302
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 3  RMSE difference=0.0409221
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 4  RMSE difference=0.0334655
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 5  RMSE difference=0.065511
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 6  RMSE difference=0.0647318
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 7  RMSE difference=0.0649421
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 8  RMSE difference=0.000396907
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:41:30 | DEBUG | M04 |   degree= 9  RMSE difference=0.000387027
+2026-07-26 15:41:30 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:41:30 | DEBUG | M04 |   degree=10  RMSE difference=0.00780148
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 1  RMSE difference=0.085221
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 2  RMSE difference=0.0444302
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 3  RMSE difference=0.0409221
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 4  RMSE difference=0.0334655
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 5  RMSE difference=0.065511
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 6  RMSE difference=0.0647318
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 7  RMSE difference=0.0649421
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 8  RMSE difference=0.000396907
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:43:16 | DEBUG | M04 |   degree= 9  RMSE difference=0.000387027
+2026-07-26 15:43:16 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:43:16 | DEBUG | M04 |   degree=10  RMSE difference=0.00780148
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 1  RMSE difference=0.085221
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 2  RMSE difference=0.0444302
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 3  RMSE difference=0.0409221
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 4  RMSE difference=0.0334655
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 5  RMSE difference=0.065511
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 6  RMSE difference=0.0647318
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 7  RMSE difference=0.0649421
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 8  RMSE difference=0.000396907
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:43:45 | DEBUG | M04 |   degree= 9  RMSE difference=0.000387027
+2026-07-26 15:43:45 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:43:45 | DEBUG | M04 |   degree=10  RMSE difference=0.00780148
+2026-07-26 16:21:02 | INFO | M04 | ========================
+2026-07-26 16:21:02 | INFO | M04 | SUMMARY
+2026-07-26 16:21:02 | INFO | M04 | ========================
+2026-07-26 16:21:02 | INFO | M04 | Dataset:  advertising.csv
+2026-07-26 16:21:02 | INFO | M04 | Feature:  TV,Radio,Newspaper  ->  Target: Sales  (regression)
+2026-07-26 16:21:02 | INFO | M04 | Line:     Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
+2026-07-26 16:21:02 | INFO | M04 | ========================

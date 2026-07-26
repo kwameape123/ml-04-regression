@@ -26,7 +26,8 @@ See [docs/your-files.md] for more.
 
 Links:
 
-- [ml_04_case.ipynb](notebooks/ml_04_case.ipynb)
+- [ml_04_regression_custom.ipynb](notebooks/ml_04_regression_custom.ipynb)
+- [ml_04_regression_mod.ipynb](notebooks/ml_04_regression_mod.ipynb)
 
 ## Working Files
 
@@ -113,6 +114,7 @@ uvx pre-commit run --all-files
 # run the example module to verify the environment (.venv/)
 uv run python -m mlstudio.app_case
 
+
 # run common chores
 uv run ruff format .
 uv run ruff check . --fix
@@ -186,8 +188,14 @@ Update figures to present interesting results from your custom project:
 
 ![Provide a Useful Caption](./docs/images/Figure_1.png)
 
-![Provide a Useful Caption](./docs/images/Figure_2.png)
+![Provide a Useful Caption](./docs/images/Figure_2.
+png)
 
+![Provide a Useful Caption](./docs/images/Figure_4.png)
+
+![Provide a Useful Caption](./docs/images/Figure_5.png)
+
+![Provide a Useful Caption](./docs/images/Figure_6.png)
 ## Project Documentation
 
 Additional project instructions, terms, and notes:
