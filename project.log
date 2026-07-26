@@ -127,3 +127,727 @@ dtype: int64
 2026-07-23 18:19:01 | INFO | M04 | Feature:  flipper_length_mm  ->  Target: body_mass_g  (regression)
 2026-07-23 18:19:01 | INFO | M04 | Line:     body_mass_g = 48.8297 * flipper_length_mm + -5614.07
 2026-07-23 18:19:01 | INFO | M04 | ========================
+2026-07-26 12:17:22 | INFO | M04 | === RUN START ===
+2026-07-26 12:17:22 | INFO | M04 | project=M04
+2026-07-26 12:17:22 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 12:17:22 | INFO | M04 | python=3.14.6
+2026-07-26 12:17:22 | INFO | M04 | os=Windows 11
+2026-07-26 12:17:22 | INFO | M04 | shell=powershell
+2026-07-26 12:17:22 | INFO | M04 | cwd=notebooks
+2026-07-26 12:17:22 | INFO | M04 | github_actions=False
+2026-07-26 12:17:22 | INFO | M04 | Confirming installation:
+2026-07-26 12:17:22 | INFO | M04 |   python:       3.14.6
+2026-07-26 12:17:22 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 12:17:22 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 12:17:22 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 12:17:22 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 12:17:22 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 12:17:22 | INFO | M04 | Loading dataset: penguins
+2026-07-26 12:17:22 | INFO | M04 | Loaded: 344 rows (instances), 7 columns
+2026-07-26 12:17:22 | INFO | M04 | Original rows: 344  Model rows: 342
+2026-07-26 12:17:22 | INFO | M04 | Missing values:
+species              0
+island               0
+bill_length_mm       0
+bill_depth_mm        0
+flipper_length_mm    0
+body_mass_g          0
+sex                  9
+dtype: int64
+2026-07-26 12:17:22 | INFO | M04 | Basic statistics:
+       bill_length_mm  bill_depth_mm  flipper_length_mm  body_mass_g
+count      342.000000     342.000000         342.000000   342.000000
+mean        43.921930      17.151170         200.915205  4201.754386
+std          5.459584       1.974793          14.061714   801.954536
+min         32.100000      13.100000         172.000000  2700.000000
+25%         39.225000      15.600000         190.000000  3550.000000
+50%         44.450000      17.300000         197.000000  4050.000000
+75%         48.500000      18.700000         213.000000  4750.000000
+max         59.600000      21.500000         231.000000  6300.000000
+2026-07-26 12:17:22 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 12:17:22 | INFO | M04 | 0 outliers found:
+Empty DataFrame
+Columns: [species, island, bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, sex]
+Index: []
+2026-07-26 12:17:22 | INFO | M04 | Train instances: 273
+2026-07-26 12:17:22 | INFO | M04 | Test instances: 69
+2026-07-26 12:17:22 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 12:17:22 | INFO | M04 | Fitted line: bill_depth_mm = -0.0798117 * bill_length_mm + 20.6196
+2026-07-26 12:17:22 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 12:17:22 | INFO | M04 |   R-squared: 0.0648
+2026-07-26 12:17:22 | INFO | M04 |   RMSE:      1.86874  (in units of Bill depth (mm))
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 1  train RMSE=1.92929  test RMSE=1.86874
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 2  train RMSE=1.85826  test RMSE=1.85555
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 3  train RMSE=1.83029  test RMSE=1.81396
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 4  train RMSE=1.68048  test RMSE=1.84589
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 5  train RMSE=1.66088  test RMSE=1.84075
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 6  train RMSE=1.62936  test RMSE=1.81847
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 7  train RMSE=1.61729  test RMSE=1.80567
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 8  train RMSE=1.60318  test RMSE=1.80157
+2026-07-26 12:17:22 | DEBUG | M04 |   degree= 9  train RMSE=1.60226  test RMSE=1.80629
+2026-07-26 12:17:22 | DEBUG | M04 |   degree=10  train RMSE=1.60147  test RMSE=1.80234
+2026-07-26 12:17:23 | INFO | M04 | ========================
+2026-07-26 12:17:23 | INFO | M04 | SUMMARY
+2026-07-26 12:17:23 | INFO | M04 | ========================
+2026-07-26 12:17:23 | INFO | M04 | Dataset:  penguins
+2026-07-26 12:17:23 | INFO | M04 | Feature:  bill_length_mm  ->  Target: bill_depth_mm  (regression)
+2026-07-26 12:17:23 | INFO | M04 | Line:     bill_depth_mm = -0.0798117 * bill_length_mm + 20.6196
+2026-07-26 12:17:23 | INFO | M04 | ========================
+2026-07-26 12:20:15 | INFO | M04 | Loading dataset: penguins
+2026-07-26 12:20:15 | INFO | M04 | Loaded: 344 rows (instances), 7 columns
+2026-07-26 12:20:15 | INFO | M04 | Original rows: 344  Model rows: 342
+2026-07-26 12:20:15 | INFO | M04 | Missing values:
+bill_length_mm    0
+bill_depth_mm     0
+dtype: int64
+2026-07-26 12:20:15 | INFO | M04 | Basic statistics:
+       bill_length_mm  bill_depth_mm
+count      342.000000     342.000000
+mean        43.921930      17.151170
+std          5.459584       1.974793
+min         32.100000      13.100000
+25%         39.225000      15.600000
+50%         44.450000      17.300000
+75%         48.500000      18.700000
+max         59.600000      21.500000
+2026-07-26 12:20:15 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 12:20:15 | INFO | M04 | 0 outliers found:
+Empty DataFrame
+Columns: [bill_length_mm, bill_depth_mm]
+Index: []
+2026-07-26 12:35:56 | INFO | M04 | === RUN START ===
+2026-07-26 12:35:56 | INFO | M04 | project=M04
+2026-07-26 12:35:56 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 12:35:56 | INFO | M04 | python=3.14.6
+2026-07-26 12:35:56 | INFO | M04 | os=Windows 11
+2026-07-26 12:35:56 | INFO | M04 | shell=powershell
+2026-07-26 12:35:56 | INFO | M04 | cwd=notebooks
+2026-07-26 12:35:56 | INFO | M04 | github_actions=False
+2026-07-26 12:35:56 | INFO | M04 | Confirming installation:
+2026-07-26 12:35:56 | INFO | M04 |   python:       3.14.6
+2026-07-26 12:35:56 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 12:35:56 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 12:35:56 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 12:35:56 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 12:35:56 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 12:35:56 | INFO | M04 | Loading dataset: advertising
+2026-07-26 12:38:57 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 12:39:01 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 12:39:26 | INFO | M04 | === RUN START ===
+2026-07-26 12:39:26 | INFO | M04 | project=M04
+2026-07-26 12:39:26 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 12:39:26 | INFO | M04 | python=3.14.6
+2026-07-26 12:39:26 | INFO | M04 | os=Windows 11
+2026-07-26 12:39:26 | INFO | M04 | shell=powershell
+2026-07-26 12:39:26 | INFO | M04 | cwd=notebooks
+2026-07-26 12:39:26 | INFO | M04 | github_actions=False
+2026-07-26 12:39:26 | INFO | M04 | Confirming installation:
+2026-07-26 12:39:26 | INFO | M04 |   python:       3.14.6
+2026-07-26 12:39:26 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 12:39:26 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 12:39:26 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 12:39:26 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 12:39:26 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 12:39:26 | INFO | M04 | Loading dataset: advertising
+2026-07-26 12:39:32 | INFO | M04 | === RUN START ===
+2026-07-26 12:39:32 | INFO | M04 | project=M04
+2026-07-26 12:39:32 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 12:39:32 | INFO | M04 | python=3.14.6
+2026-07-26 12:39:32 | INFO | M04 | os=Windows 11
+2026-07-26 12:39:32 | INFO | M04 | shell=powershell
+2026-07-26 12:39:32 | INFO | M04 | cwd=notebooks
+2026-07-26 12:39:32 | INFO | M04 | github_actions=False
+2026-07-26 12:39:32 | INFO | M04 | Confirming installation:
+2026-07-26 12:39:32 | INFO | M04 |   python:       3.14.6
+2026-07-26 12:39:32 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 12:39:32 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 12:39:32 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 12:39:32 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 12:39:32 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 12:39:32 | INFO | M04 | Loading dataset: advertising
+2026-07-26 12:40:04 | INFO | M04 | === RUN START ===
+2026-07-26 12:40:04 | INFO | M04 | project=M04
+2026-07-26 12:40:04 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 12:40:04 | INFO | M04 | python=3.14.6
+2026-07-26 12:40:04 | INFO | M04 | os=Windows 11
+2026-07-26 12:40:04 | INFO | M04 | shell=powershell
+2026-07-26 12:40:04 | INFO | M04 | cwd=notebooks
+2026-07-26 12:40:04 | INFO | M04 | github_actions=False
+2026-07-26 12:40:04 | INFO | M04 | Confirming installation:
+2026-07-26 12:40:04 | INFO | M04 |   python:       3.14.6
+2026-07-26 12:40:04 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 12:40:04 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 12:40:04 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 12:40:04 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 12:40:04 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 12:40:04 | INFO | M04 | Loading dataset: advertising
+2026-07-26 12:40:51 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 12:54:43 | INFO | M04 | === RUN START ===
+2026-07-26 12:54:43 | INFO | M04 | project=M04
+2026-07-26 12:54:43 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 12:54:43 | INFO | M04 | python=3.14.6
+2026-07-26 12:54:43 | INFO | M04 | os=Windows 11
+2026-07-26 12:54:43 | INFO | M04 | shell=powershell
+2026-07-26 12:54:43 | INFO | M04 | cwd=notebooks
+2026-07-26 12:54:43 | INFO | M04 | github_actions=False
+2026-07-26 12:54:43 | INFO | M04 | Confirming installation:
+2026-07-26 12:54:43 | INFO | M04 |   python:       3.14.6
+2026-07-26 12:54:43 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 12:54:43 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 12:54:43 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 12:54:43 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 12:54:43 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 12:55:57 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 12:57:08 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 12:58:13 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 12:58:13 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 12:59:59 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 12:59:59 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 12:59:59 | INFO | M04 | Missing values:
+TV           0
+Radio        0
+Newspaper    0
+Sales        0
+dtype: int64
+2026-07-26 12:59:59 | INFO | M04 | Basic statistics:
+               TV       Radio   Newspaper       Sales
+count  200.000000  200.000000  200.000000  200.000000
+mean   147.042500   23.264000   30.554000   15.130500
+std     85.854236   14.846809   21.778621    5.283892
+min      0.700000    0.000000    0.300000    1.600000
+25%     74.375000    9.975000   12.750000   11.000000
+50%    149.750000   22.900000   25.750000   16.000000
+75%    218.825000   36.525000   45.100000   19.050000
+max    296.400000   49.600000  114.000000   27.000000
+2026-07-26 12:59:59 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 12:59:59 | INFO | M04 | 0 outliers found for TV:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 12:59:59 | INFO | M04 | 0 outliers found for Radio:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 12:59:59 | INFO | M04 | 2 outliers found for Newspaper:
+        TV  Radio  Newspaper  Sales
+16    67.8   36.6      114.0   12.5
+101  296.4   36.3      100.9   23.8
+2026-07-26 12:59:59 | INFO | M04 | Original rows: 200  Model rows: 200
+2026-07-26 13:01:24 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 13:01:24 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 13:01:24 | INFO | M04 | Missing values:
+TV           0
+Radio        0
+Newspaper    0
+Sales        0
+dtype: int64
+2026-07-26 13:01:24 | INFO | M04 | Basic statistics:
+               TV       Radio   Newspaper       Sales
+count  200.000000  200.000000  200.000000  200.000000
+mean   147.042500   23.264000   30.554000   15.130500
+std     85.854236   14.846809   21.778621    5.283892
+min      0.700000    0.000000    0.300000    1.600000
+25%     74.375000    9.975000   12.750000   11.000000
+50%    149.750000   22.900000   25.750000   16.000000
+75%    218.825000   36.525000   45.100000   19.050000
+max    296.400000   49.600000  114.000000   27.000000
+2026-07-26 13:01:24 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 13:01:24 | INFO | M04 | 0 outliers found for TV:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 13:01:24 | INFO | M04 | 0 outliers found for Radio:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 13:01:24 | INFO | M04 | 2 outliers found for Newspaper:
+        TV  Radio  Newspaper  Sales
+16    67.8   36.6      114.0   12.5
+101  296.4   36.3      100.9   23.8
+2026-07-26 13:01:24 | INFO | M04 | Original rows: 200  Model rows: 198
+2026-07-26 13:01:41 | INFO | M04 | === RUN START ===
+2026-07-26 13:01:41 | INFO | M04 | project=M04
+2026-07-26 13:01:41 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 13:01:41 | INFO | M04 | python=3.14.6
+2026-07-26 13:01:41 | INFO | M04 | os=Windows 11
+2026-07-26 13:01:41 | INFO | M04 | shell=powershell
+2026-07-26 13:01:41 | INFO | M04 | cwd=notebooks
+2026-07-26 13:01:41 | INFO | M04 | github_actions=False
+2026-07-26 13:01:41 | INFO | M04 | Confirming installation:
+2026-07-26 13:01:41 | INFO | M04 |   python:       3.14.6
+2026-07-26 13:01:41 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 13:01:41 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 13:01:41 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 13:01:41 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 13:01:41 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 13:01:41 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 13:01:41 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 13:01:41 | INFO | M04 | Missing values:
+TV           0
+Radio        0
+Newspaper    0
+Sales        0
+dtype: int64
+2026-07-26 13:01:41 | INFO | M04 | Basic statistics:
+               TV       Radio   Newspaper       Sales
+count  200.000000  200.000000  200.000000  200.000000
+mean   147.042500   23.264000   30.554000   15.130500
+std     85.854236   14.846809   21.778621    5.283892
+min      0.700000    0.000000    0.300000    1.600000
+25%     74.375000    9.975000   12.750000   11.000000
+50%    149.750000   22.900000   25.750000   16.000000
+75%    218.825000   36.525000   45.100000   19.050000
+max    296.400000   49.600000  114.000000   27.000000
+2026-07-26 13:01:41 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 13:01:41 | INFO | M04 | 0 outliers found for TV:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 13:01:41 | INFO | M04 | 0 outliers found for Radio:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 13:01:41 | INFO | M04 | 2 outliers found for Newspaper:
+        TV  Radio  Newspaper  Sales
+16    67.8   36.6      114.0   12.5
+101  296.4   36.3      100.9   23.8
+2026-07-26 13:01:41 | INFO | M04 | Original rows: 200  Model rows: 198
+2026-07-26 13:01:41 | INFO | M04 | Train instances: 158
+2026-07-26 13:01:41 | INFO | M04 | Test instances: 40
+2026-07-26 13:01:41 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 13:01:41 | INFO | M04 | Fitted line: Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
+2026-07-26 13:01:41 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 13:01:41 | INFO | M04 |   R-squared: 0.9130
+2026-07-26 13:01:42 | INFO | M04 |   RMSE:      1.55426  (in units of Sales)
+2026-07-26 13:02:57 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 13:02:57 | INFO | M04 |   R-squared: 0.9130
+2026-07-26 13:02:57 | INFO | M04 |   RMSE:      1.55426  (in units of Sales)
+2026-07-26 13:05:16 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 13:05:16 | INFO | M04 |   R-squared: 0.9130
+2026-07-26 13:05:16 | INFO | M04 |   RMSE:      1.55426  (in units of Sales)
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 13:06:51 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 13:06:51 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 13:24:43 | INFO | M04 | === RUN START ===
+2026-07-26 13:24:43 | INFO | M04 | project=M04
+2026-07-26 13:24:43 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 13:24:43 | INFO | M04 | python=3.14.6
+2026-07-26 13:24:43 | INFO | M04 | os=Windows 11
+2026-07-26 13:24:43 | INFO | M04 | shell=powershell
+2026-07-26 13:24:43 | INFO | M04 | cwd=notebooks
+2026-07-26 13:24:43 | INFO | M04 | github_actions=False
+2026-07-26 13:24:43 | INFO | M04 | Confirming installation:
+2026-07-26 13:24:43 | INFO | M04 |   python:       3.14.6
+2026-07-26 13:24:44 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 13:24:44 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 13:24:44 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 13:24:44 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 13:24:44 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 13:24:44 | INFO | M04 | Loading dataset: penguins
+2026-07-26 13:24:44 | INFO | M04 | Loaded: 344 rows (instances), 7 columns
+2026-07-26 13:24:44 | INFO | M04 | Original rows: 344  Model rows: 342
+2026-07-26 13:24:44 | INFO | M04 | Missing values:
+bill_length_mm    0
+bill_depth_mm     0
+dtype: int64
+2026-07-26 13:24:44 | INFO | M04 | Basic statistics:
+       bill_length_mm  bill_depth_mm
+count      342.000000     342.000000
+mean        43.921930      17.151170
+std          5.459584       1.974793
+min         32.100000      13.100000
+25%         39.225000      15.600000
+50%         44.450000      17.300000
+75%         48.500000      18.700000
+max         59.600000      21.500000
+2026-07-26 13:24:44 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 13:24:44 | INFO | M04 | 0 outliers found:
+Empty DataFrame
+Columns: [bill_length_mm, bill_depth_mm]
+Index: []
+2026-07-26 13:24:44 | INFO | M04 | Train instances: 273
+2026-07-26 13:24:44 | INFO | M04 | Test instances: 69
+2026-07-26 13:24:44 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 13:24:44 | INFO | M04 | Fitted line: bill_depth_mm = -0.0798117 * bill_length_mm + 20.6196
+2026-07-26 13:24:44 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 13:24:44 | INFO | M04 |   R-squared: 0.0648
+2026-07-26 13:24:44 | INFO | M04 |   RMSE:      1.86874  (in units of Bill depth (mm))
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 1  train RMSE=1.92929  test RMSE=1.86874
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 2  train RMSE=1.85826  test RMSE=1.85555
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 3  train RMSE=1.83029  test RMSE=1.81396
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 4  train RMSE=1.68048  test RMSE=1.84589
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 5  train RMSE=1.66088  test RMSE=1.84075
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 6  train RMSE=1.62936  test RMSE=1.81847
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 7  train RMSE=1.61729  test RMSE=1.80567
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 8  train RMSE=1.60318  test RMSE=1.80157
+2026-07-26 13:24:44 | DEBUG | M04 |   degree= 9  train RMSE=1.60226  test RMSE=1.80629
+2026-07-26 13:24:44 | DEBUG | M04 |   degree=10  train RMSE=1.60147  test RMSE=1.80234
+2026-07-26 13:24:45 | INFO | M04 | ========================
+2026-07-26 13:24:45 | INFO | M04 | SUMMARY
+2026-07-26 13:24:45 | INFO | M04 | ========================
+2026-07-26 13:24:45 | INFO | M04 | Dataset:  penguins
+2026-07-26 13:24:45 | INFO | M04 | Feature:  bill_length_mm  ->  Target: bill_depth_mm  (regression)
+2026-07-26 13:24:45 | INFO | M04 | Line:     bill_depth_mm = -0.0798117 * bill_length_mm + 20.6196
+2026-07-26 13:24:45 | INFO | M04 | ========================
+2026-07-26 13:32:18 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 13:32:18 | INFO | M04 |   R-squared: 0.0648
+2026-07-26 13:32:18 | INFO | M04 |   RMSE:      1.86874  (in units of Bill depth (mm))
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 1  train RMSE=1.92929  test RMSE=1.86874
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 1  RMSE difference=0.0605459
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 2  train RMSE=1.85826  test RMSE=1.85555
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 2  RMSE difference=0.00271318
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 3  train RMSE=1.83029  test RMSE=1.81396
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 3  RMSE difference=0.0163208
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 4  train RMSE=1.68048  test RMSE=1.84589
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 4  RMSE difference=0.165408
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 5  train RMSE=1.66088  test RMSE=1.84075
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 5  RMSE difference=0.179861
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 6  train RMSE=1.62936  test RMSE=1.81847
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 6  RMSE difference=0.189107
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 7  train RMSE=1.61729  test RMSE=1.80567
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 7  RMSE difference=0.188376
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 8  train RMSE=1.60318  test RMSE=1.80157
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 8  RMSE difference=0.198389
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 9  train RMSE=1.60226  test RMSE=1.80629
+2026-07-26 13:41:43 | DEBUG | M04 |   degree= 9  RMSE difference=0.204037
+2026-07-26 13:41:43 | DEBUG | M04 |   degree=10  train RMSE=1.60147  test RMSE=1.80234
+2026-07-26 13:41:43 | DEBUG | M04 |   degree=10  RMSE difference=0.200872
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 1  train RMSE=1.92929  test RMSE=1.86874
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 1  RMSE difference=0.0605459
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 1  R^2 (train)=0.0497462
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 2  train RMSE=1.85826  test RMSE=1.85555
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 2  RMSE difference=0.00271318
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 2  R^2 (train)=0.118423
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 3  train RMSE=1.83029  test RMSE=1.81396
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 3  RMSE difference=0.0163208
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 3  R^2 (train)=0.144769
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 4  train RMSE=1.68048  test RMSE=1.84589
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 4  RMSE difference=0.165408
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 4  R^2 (train)=0.279037
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 5  train RMSE=1.66088  test RMSE=1.84075
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 5  RMSE difference=0.179861
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 5  R^2 (train)=0.295753
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 6  train RMSE=1.62936  test RMSE=1.81847
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 6  RMSE difference=0.189107
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 6  R^2 (train)=0.322232
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 7  train RMSE=1.61729  test RMSE=1.80567
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 7  RMSE difference=0.188376
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 7  R^2 (train)=0.332238
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 8  train RMSE=1.60318  test RMSE=1.80157
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 8  RMSE difference=0.198389
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 8  R^2 (train)=0.343835
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 9  train RMSE=1.60226  test RMSE=1.80629
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 9  RMSE difference=0.204037
+2026-07-26 14:12:43 | DEBUG | M04 |   degree= 9  R^2 (train)=0.344595
+2026-07-26 14:12:43 | DEBUG | M04 |   degree=10  train RMSE=1.60147  test RMSE=1.80234
+2026-07-26 14:12:43 | DEBUG | M04 |   degree=10  RMSE difference=0.200872
+2026-07-26 14:12:43 | DEBUG | M04 |   degree=10  R^2 (train)=0.345237
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 1  train RMSE=1.92929  test RMSE=1.86874
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 1  RMSE difference=0.0605459
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 2  train RMSE=1.85826  test RMSE=1.85555
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 2  RMSE difference=0.00271318
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 3  train RMSE=1.83029  test RMSE=1.81396
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 3  RMSE difference=0.0163208
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 4  train RMSE=1.68048  test RMSE=1.84589
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 4  RMSE difference=0.165408
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 5  train RMSE=1.66088  test RMSE=1.84075
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 5  RMSE difference=0.179861
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 6  train RMSE=1.62936  test RMSE=1.81847
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 6  RMSE difference=0.189107
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 7  train RMSE=1.61729  test RMSE=1.80567
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 7  RMSE difference=0.188376
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 8  train RMSE=1.60318  test RMSE=1.80157
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 8  RMSE difference=0.198389
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 9  train RMSE=1.60226  test RMSE=1.80629
+2026-07-26 14:13:32 | DEBUG | M04 |   degree= 9  RMSE difference=0.204037
+2026-07-26 14:13:32 | DEBUG | M04 |   degree=10  train RMSE=1.60147  test RMSE=1.80234
+2026-07-26 14:13:32 | DEBUG | M04 |   degree=10  RMSE difference=0.200872
+2026-07-26 14:41:01 | INFO | M04 | === RUN START ===
+2026-07-26 14:41:01 | INFO | M04 | project=M04
+2026-07-26 14:41:01 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 14:41:01 | INFO | M04 | python=3.14.6
+2026-07-26 14:41:01 | INFO | M04 | os=Windows 11
+2026-07-26 14:41:01 | INFO | M04 | shell=powershell
+2026-07-26 14:41:01 | INFO | M04 | cwd=notebooks
+2026-07-26 14:41:01 | INFO | M04 | github_actions=False
+2026-07-26 14:41:01 | INFO | M04 | Confirming installation:
+2026-07-26 14:41:01 | INFO | M04 |   python:       3.14.6
+2026-07-26 14:41:01 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 14:41:01 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 14:41:01 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 14:41:01 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 14:41:01 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 14:41:01 | INFO | M04 | Loading dataset: penguins
+2026-07-26 14:41:01 | INFO | M04 | Loaded: 344 rows (instances), 7 columns
+2026-07-26 14:41:01 | INFO | M04 | Original rows: 344  Model rows: 342
+2026-07-26 14:41:01 | INFO | M04 | Missing values:
+bill_length_mm    0
+bill_depth_mm     0
+dtype: int64
+2026-07-26 14:41:01 | INFO | M04 | Basic statistics:
+       bill_length_mm  bill_depth_mm
+count      342.000000     342.000000
+mean        43.921930      17.151170
+std          5.459584       1.974793
+min         32.100000      13.100000
+25%         39.225000      15.600000
+50%         44.450000      17.300000
+75%         48.500000      18.700000
+max         59.600000      21.500000
+2026-07-26 14:41:01 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 14:41:01 | INFO | M04 | 0 outliers found:
+Empty DataFrame
+Columns: [bill_length_mm, bill_depth_mm]
+Index: []
+2026-07-26 14:41:01 | INFO | M04 | Train instances: 273
+2026-07-26 14:41:01 | INFO | M04 | Test instances: 69
+2026-07-26 14:41:01 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 14:41:01 | INFO | M04 | Fitted line: bill_depth_mm = -0.0798117 * bill_length_mm + 20.6196
+2026-07-26 14:41:01 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 14:41:01 | INFO | M04 |   R-squared: 0.0648
+2026-07-26 14:41:01 | INFO | M04 |   RMSE:      1.86874  (in units of Bill depth (mm))
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 1  train RMSE=1.92929  test RMSE=1.86874
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 1  RMSE difference=0.0605459
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 2  train RMSE=1.85826  test RMSE=1.85555
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 2  RMSE difference=0.00271318
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 3  train RMSE=1.83029  test RMSE=1.81396
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 3  RMSE difference=0.0163208
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 4  train RMSE=1.68048  test RMSE=1.84589
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 4  RMSE difference=0.165408
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 5  train RMSE=1.66088  test RMSE=1.84075
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 5  RMSE difference=0.179861
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 6  train RMSE=1.62936  test RMSE=1.81847
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 6  RMSE difference=0.189107
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 7  train RMSE=1.61729  test RMSE=1.80567
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 7  RMSE difference=0.188376
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 8  train RMSE=1.60318  test RMSE=1.80157
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 8  RMSE difference=0.198389
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 9  train RMSE=1.60226  test RMSE=1.80629
+2026-07-26 14:41:01 | DEBUG | M04 |   degree= 9  RMSE difference=0.204037
+2026-07-26 14:41:01 | DEBUG | M04 |   degree=10  train RMSE=1.60147  test RMSE=1.80234
+2026-07-26 14:41:01 | DEBUG | M04 |   degree=10  RMSE difference=0.200872
+2026-07-26 14:41:02 | INFO | M04 | ========================
+2026-07-26 14:41:02 | INFO | M04 | SUMMARY
+2026-07-26 14:41:02 | INFO | M04 | ========================
+2026-07-26 14:41:02 | INFO | M04 | Dataset:  penguins
+2026-07-26 14:41:02 | INFO | M04 | Feature:  bill_length_mm  ->  Target: bill_depth_mm  (regression)
+2026-07-26 14:41:02 | INFO | M04 | Line:     bill_depth_mm = -0.0798117 * bill_length_mm + 20.6196
+2026-07-26 14:41:02 | INFO | M04 | ========================
+2026-07-26 15:10:57 | INFO | M04 | === RUN START ===
+2026-07-26 15:10:57 | INFO | M04 | project=M04
+2026-07-26 15:10:57 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 15:10:57 | INFO | M04 | python=3.14.6
+2026-07-26 15:10:57 | INFO | M04 | os=Windows 11
+2026-07-26 15:10:57 | INFO | M04 | shell=powershell
+2026-07-26 15:10:57 | INFO | M04 | cwd=notebooks
+2026-07-26 15:10:57 | INFO | M04 | github_actions=False
+2026-07-26 15:10:57 | INFO | M04 | Confirming installation:
+2026-07-26 15:10:57 | INFO | M04 |   python:       3.14.6
+2026-07-26 15:10:58 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 15:10:58 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 15:10:58 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 15:10:58 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 15:10:58 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 15:10:58 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 15:10:58 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 15:10:58 | INFO | M04 | Missing values:
+TV           0
+Radio        0
+Newspaper    0
+Sales        0
+dtype: int64
+2026-07-26 15:10:58 | INFO | M04 | Basic statistics:
+               TV       Radio   Newspaper       Sales
+count  200.000000  200.000000  200.000000  200.000000
+mean   147.042500   23.264000   30.554000   15.130500
+std     85.854236   14.846809   21.778621    5.283892
+min      0.700000    0.000000    0.300000    1.600000
+25%     74.375000    9.975000   12.750000   11.000000
+50%    149.750000   22.900000   25.750000   16.000000
+75%    218.825000   36.525000   45.100000   19.050000
+max    296.400000   49.600000  114.000000   27.000000
+2026-07-26 15:10:58 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 15:10:58 | INFO | M04 | 0 outliers found for TV:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:10:58 | INFO | M04 | 0 outliers found for Radio:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:10:58 | INFO | M04 | 2 outliers found for Newspaper:
+        TV  Radio  Newspaper  Sales
+16    67.8   36.6      114.0   12.5
+101  296.4   36.3      100.9   23.8
+2026-07-26 15:10:58 | INFO | M04 | Original rows: 200  Model rows: 198
+2026-07-26 15:10:58 | INFO | M04 | Train instances: 158
+2026-07-26 15:10:58 | INFO | M04 | Test instances: 40
+2026-07-26 15:10:58 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 15:10:58 | INFO | M04 | Fitted line: Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
+2026-07-26 15:10:58 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 15:10:58 | INFO | M04 |   R-squared: 0.9130
+2026-07-26 15:10:58 | INFO | M04 |   RMSE:      1.55426  (in units of Sales)
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:10:58 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:10:58 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:10:59 | INFO | M04 | ========================
+2026-07-26 15:10:59 | INFO | M04 | SUMMARY
+2026-07-26 15:10:59 | INFO | M04 | ========================
+2026-07-26 15:10:59 | INFO | M04 | Dataset:  advertising.csv
+2026-07-26 15:10:59 | INFO | M04 | Feature:  TV  ->  Target: Sales  (regression)
+2026-07-26 15:11:46 | INFO | M04 | === RUN START ===
+2026-07-26 15:11:46 | INFO | M04 | project=M04
+2026-07-26 15:11:46 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 15:11:46 | INFO | M04 | python=3.14.6
+2026-07-26 15:11:46 | INFO | M04 | os=Windows 11
+2026-07-26 15:11:46 | INFO | M04 | shell=powershell
+2026-07-26 15:11:46 | INFO | M04 | cwd=notebooks
+2026-07-26 15:11:46 | INFO | M04 | github_actions=False
+2026-07-26 15:11:46 | INFO | M04 | Confirming installation:
+2026-07-26 15:11:46 | INFO | M04 |   python:       3.14.6
+2026-07-26 15:11:46 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 15:11:46 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 15:11:46 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 15:11:46 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 15:11:46 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 15:11:46 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 15:11:46 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 15:11:46 | INFO | M04 | Missing values:
+TV           0
+Radio        0
+Newspaper    0
+Sales        0
+dtype: int64
+2026-07-26 15:11:46 | INFO | M04 | Basic statistics:
+               TV       Radio   Newspaper       Sales
+count  200.000000  200.000000  200.000000  200.000000
+mean   147.042500   23.264000   30.554000   15.130500
+std     85.854236   14.846809   21.778621    5.283892
+min      0.700000    0.000000    0.300000    1.600000
+25%     74.375000    9.975000   12.750000   11.000000
+50%    149.750000   22.900000   25.750000   16.000000
+75%    218.825000   36.525000   45.100000   19.050000
+max    296.400000   49.600000  114.000000   27.000000
+2026-07-26 15:11:46 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 15:11:46 | INFO | M04 | 0 outliers found for TV:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:11:46 | INFO | M04 | 0 outliers found for Radio:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:11:46 | INFO | M04 | 2 outliers found for Newspaper:
+        TV  Radio  Newspaper  Sales
+16    67.8   36.6      114.0   12.5
+101  296.4   36.3      100.9   23.8
+2026-07-26 15:11:46 | INFO | M04 | Original rows: 200  Model rows: 198
+2026-07-26 15:11:46 | INFO | M04 | Train instances: 158
+2026-07-26 15:11:46 | INFO | M04 | Test instances: 40
+2026-07-26 15:11:46 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 15:11:46 | INFO | M04 | Fitted line: Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
+2026-07-26 15:11:46 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 15:11:46 | INFO | M04 |   R-squared: 0.9130
+2026-07-26 15:11:46 | INFO | M04 |   RMSE:      1.55426  (in units of Sales)
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:11:47 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:11:47 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:11:47 | INFO | M04 | ========================
+2026-07-26 15:11:47 | INFO | M04 | SUMMARY
+2026-07-26 15:11:47 | INFO | M04 | ========================
+2026-07-26 15:11:47 | INFO | M04 | Dataset:  advertising.csv
+2026-07-26 15:11:47 | INFO | M04 | Feature:  TV  ->  Target: Sales  (regression)
+2026-07-26 15:11:47 | INFO | M04 | Line:     Sales = 0.0539592 * TV + 4.6237
+2026-07-26 15:11:47 | INFO | M04 | ========================
+2026-07-26 15:13:05 | INFO | M04 | === RUN START ===
+2026-07-26 15:13:05 | INFO | M04 | project=M04
+2026-07-26 15:13:05 | INFO | M04 | repo_dir=ml-04-regression
+2026-07-26 15:13:05 | INFO | M04 | python=3.14.6
+2026-07-26 15:13:05 | INFO | M04 | os=Windows 11
+2026-07-26 15:13:05 | INFO | M04 | shell=powershell
+2026-07-26 15:13:05 | INFO | M04 | cwd=notebooks
+2026-07-26 15:13:05 | INFO | M04 | github_actions=False
+2026-07-26 15:13:05 | INFO | M04 | Confirming installation:
+2026-07-26 15:13:05 | INFO | M04 |   python:       3.14.6
+2026-07-26 15:13:05 | INFO | M04 |   pandas:       3.0.5
+2026-07-26 15:13:05 | INFO | M04 |   numpy:        2.5.1
+2026-07-26 15:13:05 | INFO | M04 |   scikit-learn: 1.9.0
+2026-07-26 15:13:05 | INFO | M04 |   seaborn:      0.13.2
+2026-07-26 15:13:05 | INFO | M04 |   matplotlib:   3.11.1
+2026-07-26 15:13:05 | INFO | M04 | Loading dataset: advertising.csv
+2026-07-26 15:13:05 | INFO | M04 | Loaded: 200 rows (instances), 4 columns
+2026-07-26 15:13:05 | INFO | M04 | Missing values:
+TV           0
+Radio        0
+Newspaper    0
+Sales        0
+dtype: int64
+2026-07-26 15:13:05 | INFO | M04 | Basic statistics:
+               TV       Radio   Newspaper       Sales
+count  200.000000  200.000000  200.000000  200.000000
+mean   147.042500   23.264000   30.554000   15.130500
+std     85.854236   14.846809   21.778621    5.283892
+min      0.700000    0.000000    0.300000    1.600000
+25%     74.375000    9.975000   12.750000   11.000000
+50%    149.750000   22.900000   25.750000   16.000000
+75%    218.825000   36.525000   45.100000   19.050000
+max    296.400000   49.600000  114.000000   27.000000
+2026-07-26 15:13:05 | INFO | M04 | Outliers (using IQR method):
+2026-07-26 15:13:05 | INFO | M04 | 0 outliers found for TV:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:13:05 | INFO | M04 | 0 outliers found for Radio:
+Empty DataFrame
+Columns: [TV, Radio, Newspaper, Sales]
+Index: []
+2026-07-26 15:13:05 | INFO | M04 | 2 outliers found for Newspaper:
+        TV  Radio  Newspaper  Sales
+16    67.8   36.6      114.0   12.5
+101  296.4   36.3      100.9   23.8
+2026-07-26 15:13:05 | INFO | M04 | Original rows: 200  Model rows: 198
+2026-07-26 15:13:05 | INFO | M04 | Train instances: 158
+2026-07-26 15:13:05 | INFO | M04 | Test instances: 40
+2026-07-26 15:13:05 | INFO | M04 | Fitting a linear regression (scikit-learn)
+2026-07-26 15:13:05 | INFO | M04 | Fitted line: Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
+2026-07-26 15:13:05 | INFO | M04 | Fit numbers on the TEST set (for you to interpret):
+2026-07-26 15:13:05 | INFO | M04 |   R-squared: 0.9130
+2026-07-26 15:13:05 | INFO | M04 |   RMSE:      1.55426  (in units of Sales)
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 1  train RMSE=2.30965  test RMSE=2.22443
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 2  train RMSE=2.23463  test RMSE=2.1902
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 3  train RMSE=2.23442  test RMSE=2.1935
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 4  train RMSE=2.20559  test RMSE=2.17212
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 5  train RMSE=2.15667  test RMSE=2.09116
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 6  train RMSE=2.15585  test RMSE=2.09111
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 7  train RMSE=2.15585  test RMSE=2.0909
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 8  train RMSE=2.11839  test RMSE=2.11799
+2026-07-26 15:13:06 | DEBUG | M04 |   degree= 9  train RMSE=2.11338  test RMSE=2.11299
+2026-07-26 15:13:06 | DEBUG | M04 |   degree=10  train RMSE=2.11221  test RMSE=2.12001
+2026-07-26 15:13:06 | INFO | M04 | ========================
+2026-07-26 15:13:06 | INFO | M04 | SUMMARY
+2026-07-26 15:13:06 | INFO | M04 | ========================
+2026-07-26 15:13:06 | INFO | M04 | Dataset:  advertising.csv
+2026-07-26 15:13:06 | INFO | M04 | Feature:  TV,Radio,Newspaper  ->  Target: Sales  (regression)
+2026-07-26 15:13:06 | INFO | M04 | Line:     Sales = 0.0539592 * TV + 0.101015 * Radio + 0.00746937 * Newspaper + 4.6237
+2026-07-26 15:13:06 | INFO | M04 | ========================
