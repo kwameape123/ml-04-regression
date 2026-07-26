@@ -21,7 +21,7 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-[ml_04_regression_custom.ipynb](notebooks/ml_04_regression_custom.ipynb)
+[ml_04_regression_mod.ipynb](notebooks/ml_04_regression_mod.ipynb)
 
 For this technical modification:
 - `Bill_depth_mm` was the target variable.
